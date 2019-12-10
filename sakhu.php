@@ -21,7 +21,11 @@
     else if($message == "711"){
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ <input type="text"  name="date"  id="date" value="<?=date('Y-m-d H:i:s')?>"/>";
+        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
+        <?
+$date = date("วันที่ j เดือนที่ n ปี ค.ศ. Y") ;
+echo $date ;
+?>
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Sticker"
