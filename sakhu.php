@@ -18,7 +18,7 @@
         replyMsg($arrayHeader,$arrayPostData);
     }
 #ตัวอย่าง Message Type "Sticker"
-    else if($message == "#1"){
+    else if($message == "#1||#2"){
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
