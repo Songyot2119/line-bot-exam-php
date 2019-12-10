@@ -9,6 +9,7 @@
     $arrayHeader[] = "Authorization: Bearer {$accessToken}";
     
 
+echo date("Y-m-d H:i:s");
 
     //รับข้อความจากผู้ใช้
     $message = $arrayJson['events'][0]['message']['text'];
@@ -24,7 +25,6 @@
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
-       echo date("Y-m-d H:i:s")
         replyMsg($arrayHeader,$arrayPostData);
             
     }
