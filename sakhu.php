@@ -7,7 +7,7 @@
     $arrayHeader = array();
     $arrayHeader[] = "Content-Type: application/json";
     $arrayHeader[] = "Authorization: Bearer {$accessToken}";
-$today = date("วันที่ j เดือนที่ n ปี ค.ศ. Y") ;
+
     
 
 
@@ -26,8 +26,7 @@ $today = date("วันที่ j เดือนที่ n ปี ค.ศ. Y
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
-        $today = date("Y-m-d H:i:s");
-        replyMsg($arrayHeader,$arrayPostData,$today);
+        replyMsg($arrayHeader,$arrayPostData);
             
     }
 
@@ -82,4 +81,7 @@ function replyMsg($arrayHeader,$arrayPostData){
         curl_close ($ch);
     }
    exit;
+?>
+<?php
+echo date("Y-m-d H:i:s");
 ?>
