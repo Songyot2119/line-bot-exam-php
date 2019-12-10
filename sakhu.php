@@ -27,7 +27,8 @@
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
         replyMsg($arrayHeader,$arrayPostData);
-            
+          
+echo date("Y-m-d H:i:s");
     }
 
     #ตัวอย่าง Message Type "Sticker"
@@ -82,6 +83,4 @@ function replyMsg($arrayHeader,$arrayPostData){
     }
    exit;
 ?>
-<?php
-echo date("Y-m-d H:i:s");
-?>
+
