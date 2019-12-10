@@ -7,6 +7,7 @@
     $arrayHeader = array();
     $arrayHeader[] = "Content-Type: application/json";
     $arrayHeader[] = "Authorization: Bearer {$accessToken}";
+$today = date("วันที่ j เดือนที่ n ปี ค.ศ. Y") ;
     
 
 
