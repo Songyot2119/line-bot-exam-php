@@ -75,9 +75,9 @@ function replyMsg($arrayHeader,$arrayPostData){
         curl_setopt($ch, CURLOPT_POSTFIELDS,json_encode($arrayPostData));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    echo date("Y-m-d H:i:s");
         $result = curl_exec($ch);
         curl_close ($ch);
     }
    exit;
-echo date("Y-m-d H:i:s");
 ?>
