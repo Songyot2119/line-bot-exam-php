@@ -26,7 +26,7 @@
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
         $today = date("Y-m-d H:i:s");
-        replyMsg($arrayHeader,$arrayPostData);
+        replyMsg($arrayHeader,$arrayPostData,$today);
             
     }
 
