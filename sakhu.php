@@ -8,6 +8,11 @@
     $arrayHeader[] = "Content-Type: application/json";
     $arrayHeader[] = "Authorization: Bearer {$accessToken}";
     
+ <?
+$date = date("วันที่ j เดือนที่ n ปี ค.ศ. Y") ;
+echo $date ;
+?>
+
     //รับข้อความจากผู้ใช้
     $message = $arrayJson['events'][0]['message']['text'];
 #ตัวอย่าง Message Type "Text"
@@ -23,10 +28,7 @@
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
         replyMsg($arrayHeader,$arrayPostData);
-             <?
-$date = date("วันที่ j เดือนที่ n ปี ค.ศ. Y") ;
-echo $date ;
-?>
+            
     }
     #ตัวอย่าง Message Type "Sticker"
     else if($message == "ฝันดี"){
