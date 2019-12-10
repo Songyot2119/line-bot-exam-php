@@ -25,7 +25,7 @@
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
-        $arrayPostData['messages'][0]['text'] = echo date("Y-m-d H:i:s");
+        $today = date("Y-m-d H:i:s");
         replyMsg($arrayHeader,$arrayPostData);
             
     }
