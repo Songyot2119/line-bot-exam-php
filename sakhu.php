@@ -37,9 +37,9 @@
    else if($message == "71"){
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ".DateThai($strDate,$strMonthThai,$strYear);
+        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ"DateThai($strDate,$strMonthThai,$strYear);
         replyMsg($arrayHeader,$arrayPostData);  
-        DateThai($strDate,$strMonthThai,$strYear);
+      //  DateThai($strDate,$strMonthThai,$strYear);
 
     }
 
