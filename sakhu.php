@@ -39,6 +39,8 @@
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
         DateThai($strYear);
+        $strDate = "2008-08-14 13:42:44";
+echo "ThaiCreate.Com Time now : ".DateThai($strYear);
         replyMsg($arrayHeader,$arrayPostData);  
 
     }
