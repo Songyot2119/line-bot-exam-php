@@ -44,7 +44,16 @@
 
     }
 
+#ตัวอย่าง Message Type "Sticker"
+    else if($message == "72"){
+       $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ".echo date("Y-m-d H:i:s");
+        
+        replyMsg($arrayHeader,$arrayPostData);  
+       
 
+    }
     #ตัวอย่าง Message Type "Sticker"
     else if($message == "ฝันดี"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
