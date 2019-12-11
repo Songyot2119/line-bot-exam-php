@@ -37,7 +37,8 @@
     else if($message == "71"){
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ $strDate" $strDate;
+        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
+        $arrayPostData $strDate ['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
        function DateThai($strDate)
 {
 $strYear = date("Y",strtotime($strDate))+543;
@@ -108,6 +109,21 @@ function replyMsg($arrayHeader,$arrayPostData){
         $result = curl_exec($ch);
         curl_close ($ch);
     }
+  function DateThai($strDate)
+{
+$strYear = date("Y",strtotime($strDate))+543;
+$strMonth= date("n",strtotime($strDate));
+$strDay= date("j",strtotime($strDate));
+$strHour= date("H",strtotime($strDate));
+$strMinute= date("i",strtotime($strDate));
+$strSeconds= date("s",strtotime($strDate));
+$strMonthCut = Array("","ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค.");
+$strMonthThai=$strMonthCut[$strMonth];
+return "$strDay $strMonthThai $strYear, $strHour:$strMinute";
+}
+ 
+$strDate = "2008-08-14 13:42:44";
+echo "ThaiCreate.Com Time now : ".DateThai($strDate);
    exit;
 ?>
 
