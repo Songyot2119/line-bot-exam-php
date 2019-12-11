@@ -37,11 +37,9 @@
    else if($message == "71"){
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ".date_default_timezone_set("America/New_York");
-        
-echo "The time is " . date("h:i:sa");
+        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ".DateThai;
         replyMsg($arrayHeader,$arrayPostData);  
-        DateThai($strDate);
+        DateThai($strDate,$strMonthThai,$strYear);
 
     }
 
