@@ -108,8 +108,8 @@ $strMonthThai=$strMonthCut[$strMonth];
 return "$strDay $strMonthThai $strYear, $strHour:$strMinute";
 }
  
-$strDate = "2008-08-14 13:42:44";
-echo "ThaiCreate.Com Time now : ".DateThai($strDate);
+//$strDate = "2008-08-14 13:42:44";
+//echo "ThaiCreate.Com Time now : ".DateThai($strDate);
    exit;
 ?>
 
