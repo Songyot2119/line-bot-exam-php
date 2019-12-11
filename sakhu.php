@@ -38,7 +38,7 @@
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
-        $arrayPostData $strDate ['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
+        $strDate
        function DateThai($strDate)
 {
 $strYear = date("Y",strtotime($strDate))+543;
@@ -56,7 +56,7 @@ $strDate = "2008-08-14 13:42:44";
 echo "ThaiCreate.Com Time now : ".DateThai($strDate);
         replyMsg($arrayHeader,$arrayPostData);
           
-echo date("Y-m-d H:i:s");
+
     }
 
     #ตัวอย่าง Message Type "Sticker"
