@@ -37,10 +37,8 @@
     else if($message == "71"){
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
-        DateThai($strYear);
-        $strDate = "2008-08-14 13:42:44";
-echo "ThaiCreate.Com Time now : ".DateThai($strYear);
+        $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ"DateThai($strDate);
+        
         replyMsg($arrayHeader,$arrayPostData);  
 
     }
@@ -49,7 +47,7 @@ else if($message == "72"){
        $strDate['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $strDate['messages'][0]['type'] = "text";
        
-        $strDate ['messages'][0]['text'] = "2008-08-14 13:42:44";
+        $strDate = "2008-08-14 13:42:44";
 echo "ThaiCreate.Com Time now : ".DateThai($strDate);
          
 DateThai($strDate);
