@@ -45,6 +45,16 @@ echo "ThaiCreate.Com Time now : ".DateThai($strYear);
 
     }
 
+else if($message == "72"){
+       $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        
+        DateThai($strYear);
+        $strDate = "2008-08-14 13:42:44";
+echo "ThaiCreate.Com Time now : ".DateThai($strYear);
+        replyMsg($arrayHeader,$arrayPostData);  
+
+    }
+
     #ตัวอย่าง Message Type "Sticker"
     else if($message == "ฝันดี"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
