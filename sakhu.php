@@ -49,9 +49,9 @@ else if($message == "72"){
        
        
         $strDate = "2008-08-14 13:42:44";
-echo "ThaiCreate.Com Time now : ".DateThai($strYear);
+echo "ThaiCreate.Com Time now : ".DateThai($strDate);
          
-
+DateThai($strDate);
     }
 
     #ตัวอย่าง Message Type "Sticker"
