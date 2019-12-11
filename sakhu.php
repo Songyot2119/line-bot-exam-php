@@ -38,7 +38,7 @@
        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สาคู121 ว.4 ร้านสะดวกซื้อในเขตพื้นที่รับผิดชอบ เหตุการณ์ปกติ";
-        now($strDate);
+        DateThai($strYear);
         replyMsg($arrayHeader,$arrayPostData);  
 
     }
@@ -106,7 +106,7 @@ $strMonthThai=$strMonthCut[$strMonth];
 return "$strDay $strMonthThai $strYear, $strHour:$strMinute";
 }
  
-$strDate = now;
+$strDate = "2008-08-14 13:42:44";
 echo "ThaiCreate.Com Time now : ".DateThai($strDate);
    exit;
 ?>
